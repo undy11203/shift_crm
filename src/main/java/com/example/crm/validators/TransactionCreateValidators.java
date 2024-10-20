@@ -16,8 +16,8 @@ public class TransactionCreateValidators implements Validator {
     @Override
     public void validate(Object target, Errors errors) {
         TransactionCreateRequest request = (TransactionCreateRequest) target;
-
-        if (request.getPaymentType() != "CASH" || request.getPaymentType() != "CARD" || request.getPaymentType() != "TRANSFER") {
+        System.out.println(request.getPaymentType());
+        if (!request.getPaymentType().equals("CASH") && !request.getPaymentType().equals("CARD") && !request.getPaymentType().equals("TRANSFER")) {
             errors.reject("invalid field", "it's not a CASH or CARD or TRANSFER");
         }
     }
