@@ -8,9 +8,8 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 @Data
-@Getter
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class SellersResponse {
     private int id;
 

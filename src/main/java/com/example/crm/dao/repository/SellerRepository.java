@@ -1,4 +1,4 @@
-package com.example.crm.repository;
+package com.example.crm.dao.repository;
 
 import com.example.crm.models.Seller;
 import org.springframework.data.jpa.repository.JpaRepository;
